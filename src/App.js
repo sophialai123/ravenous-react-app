@@ -2,6 +2,7 @@
 import './App.css';
 import SearchBar from "./components/SearchBar/SearchBar";
 import BusinessList from './components/BusinessList/BusinessList';
+import React from 'react';
 
 const business = {
 
@@ -20,14 +21,25 @@ const business = {
 const businesses = [business, business, business, business, business, business]
 
 
-function App() {
-  return (
-    <div className="App">
-      <h1>ravenous</h1>
-      <SearchBar />
-      <BusinessList businesses={businesses} />
-    </div>
-  );
+class App extends React.Component {
+
+  searchYelp(term, location, sortBy) {
+
+    console.log(`Searching Yelp with ${term}, ${location}, ${sortBy}`)
+
+  }
+
+  render() {
+    return (
+      <div className="App" >
+        <h1>ravenous</h1>
+        {/* Set the searchYelp Prop in SearchBar  */}
+        <SearchBar searchYelp={this.searchYelp} />
+        <BusinessList businesses={businesses} />
+      </div>
+    );
+  }
+
 }
 
 export default App;
