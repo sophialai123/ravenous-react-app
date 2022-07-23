@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-image: url('./background_search_desktop.jpeg'); */
-  background-image: url('./food.png');
+  background-image: url('./background_search_desktop.jpeg');
+  /* background-image: url('./food.png'); */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30rem;
+  height: 25rem;
 
 }
 
@@ -14,8 +14,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2.22rem;
-  /* color: #ffffff; */
-  color: #F7ECDE;
+  color: #ffffff;
+
 
 }
 
@@ -113,7 +113,7 @@
 
 @media only screen and (max-width: 560px) {
   .SearchBar {
-    height: 20rem;
+    background-image: url('./background_search_mobile.jpeg');
   }
 
   .SearchBar-sort-options ul {
