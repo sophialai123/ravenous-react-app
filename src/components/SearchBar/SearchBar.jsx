@@ -1,9 +1,6 @@
 import React from "react";
 import './SearchBar.css';
 
-
-
-
 class SearchBar extends React.Component {
 
   constructor(props) {
@@ -20,7 +17,6 @@ class SearchBar extends React.Component {
       'Highest Rated': 'rating',
       'Most Reviewed': 'review_count'
     }
-
   }
 
   //Get a Sort Option's Class
@@ -39,7 +35,6 @@ class SearchBar extends React.Component {
     })
   }
 
-
   //Handle a Term Change
   //no need to bind this use Arrow Function
   handleTermChange = (event) => {
@@ -48,8 +43,6 @@ class SearchBar extends React.Component {
     })
 
   }
-
-
 
   //Handle Location Change
   handleLocationChange = (event) => {
@@ -77,20 +70,14 @@ class SearchBar extends React.Component {
         //Set the Class Name of a Sort Option
         className={this.getSortByClass(sortByOptionValue)}
         key={sortByOptionValue}
-        //This will allow us to both bind to the current value of this (as we usually do in the constructor()) but also bind the current sortByOptionValue as the first argument to the method call, 
-
+        // both bind to the current value of this (as we usually do in the constructor()) but also bind the current sortByOptionValue as the first argument to the method call, 
         onClick={this.handleSortByChange.bind(this, sortByOptionValue)}
-
       >{sortByOption}</li>
     })
 
   }
 
-
-
-
   render() {
-
     return (
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
@@ -104,13 +91,11 @@ class SearchBar extends React.Component {
           <input onChange={this.handleLocationChange} placeholder="Where?" />
         </div>
         <div className="SearchBar-submit">
-          <a onClick={this.handleSearch}>Let's Go</a>
+          <button onClick={this.handleSearch}>Let's Go</button>
         </div>
       </div>
     )
-
   }
-
 }
 
 
