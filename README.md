@@ -4,7 +4,7 @@
  
 - You can search according to Best Match, Highest Rated and Most Reviewed on the top of search bar.
   
-- Simply enter the `food ` or `business name` that you want and the `location`, and then press the `Let's go` button. It will take a few seconds to load the data.
+- Simply enter the `food ` , `restaurants` or `business name` that you want and the `location`, and then press the `Let's go` button. It will take a few seconds to load the data.
 
 - Example: type Pizza, Sydney, and click Most Reviewed.
   
