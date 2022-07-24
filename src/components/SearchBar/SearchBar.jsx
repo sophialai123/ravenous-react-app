@@ -2,14 +2,12 @@ import React from "react";
 import './SearchBar.css';
 
 class SearchBar extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       term: " ",
       location: '',
       sortBy: 'best_match'
-
     }
     //set the values of those keys from API
     this.sortByOptions = {
@@ -41,7 +39,6 @@ class SearchBar extends React.Component {
     this.setState({
       term: event.target.value
     })
-
   }
 
   //Handle Location Change
@@ -49,7 +46,6 @@ class SearchBar extends React.Component {
     this.setState({
       location: event.target.value
     })
-
   }
 
   //Handle a Search
@@ -57,24 +53,22 @@ class SearchBar extends React.Component {
     //use searchYelp props from APP parent
     this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy)
     event.preventDefault();
-
   }
 
 
   renderSortByOptions() {
     //Call the keys() method on the JavaScript Object library.
     return Object.keys(this.sortByOptions).map(sortByOption => {
-      const sortByOptionValue = this.sortByOptions[sortByOption];
-
+      //sortByOption is the key of object sortByOptions
+      let sortByOptionValue = this.sortByOptions[sortByOption];
       return <li
         //Set the Class Name of a Sort Option
         className={this.getSortByClass(sortByOptionValue)}
-        key={sortByOptionValue}
+        key={sortByOptionValue} //unique key
         // both bind to the current value of this (as we usually do in the constructor()) but also bind the current sortByOptionValue as the first argument to the method call, 
         onClick={this.handleSortByChange.bind(this, sortByOptionValue)}
       >{sortByOption}</li>
     })
-
   }
 
   render() {
@@ -82,7 +76,7 @@ class SearchBar extends React.Component {
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
           <ul>
-            {/* <!-- Use .renderSortByOptions() to sort the businesses by their options --> */}
+            {/* call .renderSortByOptions() to sort the businesses by their options */}
             {this.renderSortByOptions()}
           </ul>
         </div>
