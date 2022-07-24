@@ -1,4 +1,4 @@
-const apiKey = '84Bh7EJwcrdkZmO95IdzxK9JdxtxI5b7NUDVyLtExr6AIYPqmIDGEffddzKZihn_gFHG93GpP4oOkUh504eMNE7pJOzb_tASm0aEB6wS3WTWdzO4ja1hA7Py49vdYnYxgit';
+const apiKey = '84Bh7EJwcrdkZmO95IdzxK9JdxtxI5b7NUDVyLtExr6AIYPqmIDGEffddzKZihn_gFHG93GpP4oOkUh504eMNE7pJOzb_tASm0aEB6wS3WTWdzO4ja1hA7Py49vdYnYx';
 
 
 //store the functionality needed to interact with the Yelp API.
