@@ -1,5 +1,6 @@
 
-import apiKey from "./apiKey";
+const apiKey = 'FeZiDApBrVitjx2fpIgipX6yHAvXJAMailFqymNnkYdsQVhjFq5STZSzWeTIFMk6gRkeMyDgCUUSY-52hJ7ywMT-WhjkTdENP_HjNcF1qpR4hOWlmxia_EULZPnfYnYx';
+
 //store the functionality needed to interact with the Yelp API.
 export const Yelp = {
   //this method to retrieve search results from the Yelp API.
