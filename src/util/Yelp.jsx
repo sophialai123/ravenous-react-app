@@ -1,9 +1,7 @@
-const apiKey = '84Bh7EJwcrdkZmO95IdzxK9JdxtxI5b7NUDVyLtExr6AIYPqmIDGEffddzKZihn_gFHG93GpP4oOkUh504eMNE7pJOzb_tASm0aEB6wS3WTWdzO4ja1hA7Py49vdYnYx';
 
-
+import apiKey from "./apiKey";
 //store the functionality needed to interact with the Yelp API.
 export const Yelp = {
-
   //this method to retrieve search results from the Yelp API.
   search(term, location, sortBy) {
     ///businesses endpoint of the Yelp API
