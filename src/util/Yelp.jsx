@@ -1,5 +1,5 @@
 
-const apiKey = 'FeZiDApBrVitjx2fpIgipX6yHAvXJAMailFqymNnkYdsQVhjFq5STZSzWeTIFMk6gRkeMyDgCUUSY-52hJ7ywMT-WhjkTdENP_HjNcF1qpR4hOWlmxia_EULZPnfYnYx';
+const apiKey = 't7-4aQ0w1MWR7ubn7jpFB2JDeUfIy9_xZhmsNp_mk4ECCqN8cdN-ASoa8si7xn3OmfRLnDPgy8u03VA5RWkFJNfixZBNU35O46o_C-bitFdAyDpmg4w_CI7Yky3nYnYx';
 
 //store the functionality needed to interact with the Yelp API.
 export const Yelp = {
