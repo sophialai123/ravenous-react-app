@@ -29,5 +29,5 @@ or `sudo npm install -g heroku`
 2. Find current app-name
 3. Go to settings
 4. Scroll down to 'Domains'
-5. Copy the 'Domains'URL to before the api url 
+5. Copy the 'Domains'URL right before the api url 
 6. You did it!
