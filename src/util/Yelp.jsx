@@ -1,6 +1,4 @@
-
-const apiKey = 'zi6WO9DWpOwxVSIlzvzLAgeAtD3Zp_8U9d5x73kCvNL33Be3VW773E26yz_kPaHJiGF0VD0k1s8h2WVeMhif1xvc_gTe-aVY0vyzw5mqbzgKmgCi6wpsNnqKW6cNY3Yx';
-
+ const apiKey = 'zi6WO9DWpOwxVSIlzvzLAgeAtD3Zp_8U9d5x73kCvNL33Be3VW773E26yz_kPaHJiGF0VD0k1s8h2WVeMhif1xvc_gTe-aVY0vyzw5mqbzgKmgCi6wpsNnqKW6cNY3Yx';
 //store the functionality needed to interact with the Yelp API.
 export const Yelp = {
   //this method to retrieve search results from the Yelp API.
