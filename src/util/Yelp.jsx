@@ -1,5 +1,5 @@
 
-const apiKey = 'f_SjIjFiAG8uqeG5eKvGAHJiARagsscLAY-eD8Hd199RAheyz5G7KEyjhjqlAXb1wocS8reZGGq8KO92d4x_Bykzhf2OJpW4NhgrlMjQGf3a_NQPgMxp6yCFmRDzYnYx';
+const apiKey = 'zi6WO9DWpOwxVSIlzvzLAgeAtD3Zp_8U9d5x73kCvNL33Be3VW773E26yz_kPaHJiGF0VD0k1s8h2WVeMhif1xvc_gTe-aVY0vyzw5mqbzgKmgCi6wpsNnqKW6cNY3Yx';
 
 //store the functionality needed to interact with the Yelp API.
 export const Yelp = {
@@ -8,7 +8,7 @@ export const Yelp = {
     ///businesses endpoint of the Yelp API
     //https://cors-anywhere.herokuapp.com/
     return fetch(
-      `https://ravenous-sophia-app.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
+      ` https://revenous-app-react.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
         headers: {
           Authorization: `Bearer ${apiKey}`
